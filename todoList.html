@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            min-height:80vh;
+            
+        }
+        .inner{
+            text-align: center;
+            border:2px solid rgb(0, 0, 0);
+            padding-bottom:15rem;
+            padding-top:6rem;
+            padding-right: 2rem;
+            padding-left:2rem;
+            border-radius: 20px;
+            background-color: rgb(97, 97, 103);
+            color:black;
+            
+        }
+        h2{
+            margin-bottom:2rem;
+            text-transform: capitalize;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+        }
+        #textbox{
+            height:2rem;
+            border-radius:5px;
+            margin-right:2rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        #box{
+            padding:1rem;
+             width: 7rem; 
+             border:2px solid rgb(110, 110, 113);
+             border-radius: 10px;
+             background-color: blanchedalmond;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             font-size: 1.3rem;
+             border:2px solid black;
+        }
+        #todoList{
+                text-align: start;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color:rgb(255, 255, 255);
+                text-shadow: 2px 2px 7px black;
+                margin-top:2rem;
+                font-size: 2rem;
+                text-transform: uppercase;
+        }
+    </style>   
+    <script defer src="todoList.js"></script>
+</head>
+<body>
+    <article class="container">
+        <section class="inner">
+            <h2>todo list</h2>
+            <!-- textbox -->
+            <input type="text" name="textbox" id="textbox" required autofocus>
+      <!-- button -->
+            <input type="button" name="box" id="box" value="click">
+        
+            <div id="todoList">
+
+                
+            </div>
+        
+        </section>
+    </article>
+</body>
+</html>
